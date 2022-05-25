@@ -1,7 +1,4 @@
-# darewithdare
+via Netlify
 
-welcome to my repo
-
-Don't forget to check this out!
-
-Don't forget to check that out!
+# dsoniran
+My personal for portfolio hosting and blogging.
