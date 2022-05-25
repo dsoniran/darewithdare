@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://dsoniran.info//'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = ["https://github.com/dsoniran/ananke"]
+title = 'darewithdata'
+theme = nanke
