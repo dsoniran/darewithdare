@@ -1,1 +1,1 @@
-git submodule add https://github.com/dsoniran/ananke/
+git submodule add https://github.com/dsoniran/ananke ananke
