@@ -1,12 +1,18 @@
-baseurl = "https://devcows.github.io/hugo-universal-theme/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
-title = "Universal"
+baseurl = "https://www.dsoniran.info/"
+title = "dsoniran"
+# for smart copyright line, leave this blank and check [params.copyright]
+copyright = ""
+
 theme = "hugo-universal-theme"
 themesDir = "../.."
+
 languageCode = "en-us"
+
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "en"
+
 # Enable comments by entering your Disqus shortname
-disqusShortname = "devcows"
+disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
@@ -14,10 +20,19 @@ googleAnalytics = ""
 summaryLength = 70
 
 # Define the number of posts per page
-paginate = 10
+paginate = 7
+# unsure action
+preserveTaxonomyNames = true
 
 # not pluralize title pages by default
-pluralizelisttitles = false
+pluralizelisttitles = true
+
+enableRobotsTXT = false # generate robots.txt https://gohugo.io/templates/robots/
+
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+pygmentsCodefences = true
+
+enableEmoji = true
 
 [menu]
 
@@ -395,18 +410,18 @@ pluralizelisttitles = false
 
     # Social media
     facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
-    twitter_site = "GoHugoIO" # the Twitter handle of your site (without the '@')
+    twitter_site = "darewithdata" # the Twitter handle of your site (without the '@')
     default_sharing_image = "img/sharing-default.png"
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
-    enableGoogleMaps = true
+    enableGoogleMaps = false
     googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
 
     latitude = "-12.043333"
     longitude = "-77.028333"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "default"
+    style = "marsala"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -549,3 +564,10 @@ pluralizelisttitles = false
   category = "categories"
   tag = "tags"
   author = "authors"
+  
+[languages]
+# edit this block for your own language
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
