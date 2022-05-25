@@ -1,4 +1,4 @@
-baseURL = 'http://dsoniran.info//'
-languageCode = 'en-us'
-title = 'darewithdata'
-theme = nanke
+baseURL = "http://dsoniran.info//"
+languageCode = "en-us"
+title = "darewithdata"
+theme = "ananke
