@@ -1,4 +1,4 @@
-baseURL = "http://dsoniran.info"
+baseURL = "https://dsoniran.netlify.app" # to be updated once fully live "http://dsoniran.info"
 languageCode = "en-us"
 title = "darewithdata"
 theme = "ananke"
