@@ -47,7 +47,7 @@ disqusShortname = 'darewithdata'
   custom_css = ["meir.css", "jquery.bxslider.css"]
   text_color = "fg-solarized"
   author = ""
-  favicon = ""
+  favicon = "static/favicon.ico"
   site_logo = "img/logo.svg"
   # description = "The last theme you'll ever need. Maybe." unsure what this is for
   
