@@ -35,6 +35,8 @@ enableRobotsTXT = true
   # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-gold" #"bg-black" default
   recent_posts_number = 3
+# enable comments with disqus
+  commentoEnable = true
 
 [[params.ananke_socials]]
 name = "twitter"
