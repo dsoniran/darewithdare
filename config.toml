@@ -16,7 +16,7 @@ disqusShortname = 'darewithdata'
 [languages]
   [languages.en]
     # title = "darewithdata"
-    languageDirection = 'rtl' # for Right-To-Left languages
+    languageDirection = 'ltr' # for Right-To-Left languages
     weight = 1
     contentDir = "content/en"
     language_name = "English"
@@ -28,7 +28,7 @@ disqusShortname = 'darewithdata'
       
   [languages.fr]
     # title = "darewithdata"
-    languageDirection = 'ltr'
+    languageDirection = 'rtl'
     weight = 2
     contentDir = "content/fr"
     languageName = "French"
