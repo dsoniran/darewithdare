@@ -1,44 +1,103 @@
-baseURL = "http://dsoniran.info//"
+baseURL = "http://dsoniran.info"
 languageCode = "en-us"
 title = "darewithdata"
 theme = "ananke"
-resourceDir = "../resources"
-
+# resourceDir = "../resources"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
 enableRobotsTXT = true
+Paginate = 9 # this is set low for demonstrating with dummy content. Set to a higher number
+disqusShortname = 'darewithdata'
+
+[permalinks]
+  posts = '/:year/:month/:slug/'
 
 [languages]
   [languages.en]
-    title = "darewithdata"
+    # title = "darewithdata"
+    languageDirection = 'rtl' # for Right-To-Left languages
     weight = 1
     contentDir = "content/en"
-    # languageDirection = 'rtl' for Right-To-Left languages
+    language_name = "English"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+      name = 'Tags'
+      pageref = '/tags'
+      weight = 1
+      
   [languages.fr]
-    title = "darewithdata"
+    # title = "darewithdata"
+    languageDirection = 'ltr'
     weight = 2
     contentDir = "content/fr"
+    languageName = "French"
+    [[languages.fr.menu.main]]
+      name = 'étiqs'
+      pageref  = '/tags'
+      weight = 1
 
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+#[sitemap]
+ # changefreq = "monthly"
+  #priority = 0.5
+  #filename = "sitemap.xml"
 
 [params]
-  text_color = ""
+  body_classes = "alef bg-solarized"
+  custom_css = ["meir.css", "jquery.bxslider.css"]
+  text_color = "fg-solarized"
   author = ""
   favicon = ""
   site_logo = "img/logo.svg"
-  description = "The last theme you'll ever need. Maybe."
+  # description = "The last theme you'll ever need. Maybe." unsure what this is for
+  
+  post_content_classes = "alef tj"
   # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  background_color_class = "bg-black"
-  recent_posts_number = 3
-# enable comments with disqus
+  background_color_class = "bg-alt-background"
+  recent_posts_number = 5
+  # enable comments with disqus
   commentoEnable = true
 
 
 [[params.ananke_socials]]
 name = "twitter"
 url = "https://twitter.com/darewithdata"
+
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/dsoniran"
+
+[[params.ananke_socials]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/dsoniran"
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss"
+    baseName = "feed"
+
+[mediaTypes]
+[mediaTypes."application/rss"]
+suffixes = ["rss"]
+
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'solarized-dark'
+    tabWidth = 4
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+      block = true
+    [markup.goldmark.renderer]
+      unsafe = true
