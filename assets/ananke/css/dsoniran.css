@@ -1,0 +1,199 @@
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+    --base3-lighten: #fefbf4;
+
+    --bgcolor: var(--base3);
+    --alt-bg-color: var(--base03);
+    --fg-color: var(--base01);
+    --alt-fg-color: var(--base3);
+    --link-color: var(--orange);
+    --link-hover-color: var(--red);
+    --bg-lighten: var(--base3-lighten);
+    --footer-bg-color: var(--orange);
+    --footer-fg-color: var(--base3);
+}
+
+.bg-solarized {
+	background: var(--bgcolor) url(/img/body_bg.png);
+}
+
+.bg-lighten {
+	background: var(--bg-lighten);
+}
+
+body {
+	font-family: Alef,Arial,sans-serif;
+}
+
+.fg-solarized {
+	color: var(--fg-color);
+}
+
+
+.fg-alt-solarized {
+  color: var(--alt-fg-color);
+}
+
+main h1, main h2, main h3 {
+  color: var(--orange);
+}
+
+.bg-alt-background {
+  background: var(--alt-bg-color);
+}
+
+.site-footer, .site-footer a {
+  background: var(--footer-bg-color);
+  color: var(--footer-fg-color);
+}
+
+.box-shadow-inset {
+  box-shadow: inset 0 5px 5px rgba(0,0,0,0.3);
+}
+
+.box-shadow {
+  box-shadow: 0 5px 8px rgba(0,0,0,0.8);
+}
+
+@font-face {
+    font-family: 'Alef';
+    src: url('/font/Alef-bold.eot');
+    src: url('/font/Alef-bold.eot?#iefix') format('embedded-opentype'),
+         url('/font/Alef-bold.woff') format('woff'),
+         url('/font/Alef-bold.ttf') format('truetype'),
+         url('/font/Alef-bold.svg#alefbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Alef';
+    src: url('/font/Alef-regular.eot');
+    src: url('/font/Alef-regular.eot?#iefix') format('embedded-opentype'),
+         url('/font/Alef-regular.woff') format('woff'),
+         url('/font/Alef-regular.ttf') format('truetype'),
+         url('/font/Alef-regular.svg#alefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.alef {
+  font-family: Alef,sans-serif;
+}
+
+
+.highlight {
+  direction: ltr;
+}
+
+code {
+  direction: ltr;
+  display: inline-block;
+}
+
+[dir="rtl"] .lh-copy blockquote {
+	display: block;
+	font-size: .875em;
+	margin-right: 2rem;
+  margin-left: 0;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border-right: 4px solid #ccc;
+  border-left: 0 none;
+	padding-right: 1rem;
+  padding-left: 0;
+}
+
+main figure {
+  text-align: center;
+}
+
+main figure h4 {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+main figure img {
+  display: inline-block;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.25);
+}
+
+[dir="rtl"] main figure img {
+  box-shadow: -4px 4px 8px rgba(0,0,0,0.25);
+}
+
+.nested-links a, .orange {
+  color: var(--link-color);
+}
+
+.nested-links a:focus, .nested-links a:hover {
+  color: var(--link-hover-color);
+}
+
+.pr6_5  {
+  padding-right: 13rem;
+}
+
+footer .ananke-socials a {
+  color: #fdf6e3;
+}
+
+#main-navigation a, .solarized-base1 {
+  color: var(--base1);
+}
+
+#main-navigation a:hover, #main-navigation a.active {
+  color: var(--orange);
+}
+
+.text-shadow {
+  text-shadow: #657b83 1px 0 1px;
+}
+
+html[dir=rtl] .text-shadow {
+  text-shadow: #657b83 -1px 0 1px;
+}
+
+html[dir="rtl"] .welcome {
+  padding-left: 0;
+  padding-right: 50px;
+  background: url(/img/meir_rtl.png) 100% 5px no-repeat;
+}
+
+.welcome {
+  padding-left: 50px;
+  background: url(/img/meir_ltr.png) 0 2px no-repeat;
+}
+
+.pagination li a {
+  background: var(--bg-lighten);
+  color: var(--fg-color);
+}
+
+.highlight {
+  direction: ltr;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* purgecss ignore */
+.highlight > pre {
+  padding: 1rem;
+}
