@@ -58,6 +58,9 @@ disqusShortname = 'darewithdata'
   # enable comments with disqus
   commentoEnable = true
 
+[[params.ananke_socials]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/dsoniran"
 
 [[params.ananke_socials]]
 name = "twitter"
@@ -68,8 +71,8 @@ name = "github"
 url = "https://github.com/dsoniran"
 
 [[params.ananke_socials]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/dsoniran"
+name = "Tableau"
+url = "https://public.tableau.com/app/profile/d.re.soniran#!/"
 
 [outputFormats]
   [outputFormats.RSS]
