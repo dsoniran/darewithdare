@@ -75,8 +75,8 @@ color = "#ff6800"
 
 [[params.ananke_socials]]
 name = "tableau"
-url = "https://public.tableau.com/en-gb/s/"
-label = "TND Tableau Public"
+url = "https://public.tableau.com/app/profile/d.re.soniran#!/"
+label = "assets/ananke/socials/tableau_icon.svg"
 color = ""
 
 [outputFormats]
