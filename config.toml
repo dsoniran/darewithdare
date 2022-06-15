@@ -71,7 +71,7 @@ name = "github"
 url = "https://github.com/dsoniran"
 
 [[params.ananke_socials]]
-name = "Tableau"
+name = "tableau"
 url = "https://public.tableau.com/app/profile/d.re.soniran#!/"
 
 [outputFormats]
