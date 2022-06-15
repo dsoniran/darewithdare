@@ -65,14 +65,19 @@ url = "https://www.linkedin.com/in/dsoniran"
 [[params.ananke_socials]]
 name = "twitter"
 url = "https://twitter.com/darewithdata"
+label = "TND Twitter"
 
 [[params.ananke_socials]]
 name = "github"
 url = "https://github.com/dsoniran"
+label = "TND GitHub Account"
+color = "#ff6800"
 
 [[params.ananke_socials]]
 name = "tableau"
 url = "https://public.tableau.com/app/profile/d.re.soniran#!/"
+label = "TND Tableau Public"
+color = ""
 
 [outputFormats]
   [outputFormats.RSS]
